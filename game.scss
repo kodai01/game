@@ -1,0 +1,38 @@
+.number {
+  font-size: 48px;
+  color: red;
+  word-break: break-all;
+  width: 100vw;
+}
+
+.button-list {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 15px;
+
+  & > button {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: black;
+    font-size: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+
+    &:disabled {
+      background-color: gray;
+    }
+  }
+}
+
+.timer {
+  font-size: 36px;
+  color: blue;
+}
+
+.point {
+  font-size: 28px;
+  color: black;
+  font-weight: 700;
+}
