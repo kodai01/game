@@ -36,3 +36,34 @@
   color: black;
   font-weight: 700;
 }
+
+.links {
+  display: flex;
+  padding: 16px;
+
+  & > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 32px;
+    border-radius: 32px;
+    color: gray;
+    background-color: aqua;
+    box-shadow: 2px 2px black;
+    text-decoration: none;
+
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
+
+    &:hover {
+      box-shadow: none;
+      transform: translate(2px, 2px);
+    }
+
+    &:visited {
+      color: gray;
+    }
+  }
+}
