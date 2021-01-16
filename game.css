@@ -9,7 +9,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
   grid-gap: 15px;
 }
 
@@ -37,5 +37,47 @@
   font-size: 28px;
   color: black;
   font-weight: 700;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+}
+
+.links > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 32px;
+  border-radius: 32px;
+  color: gray;
+  background-color: aqua;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+.links > a:not(:first-child) {
+  margin-left: 24px;
+}
+
+.links > a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.links > a:visited {
+  color: gray;
 }
 /*# sourceMappingURL=game.css.map */
